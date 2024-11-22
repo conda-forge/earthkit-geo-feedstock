@@ -1,5 +1,5 @@
 {% set name = "earthkit-geo" %}
-{% set version = "0.2.0" %}
+{% set version = "0.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: ea3755f07edc97466478b9c9f97390e887842f6fd8e749f6230b9270b51716e0
+  sha256: 9f713c670c2b7670f0401525e0eb26829d1fb0d4911e7f4ed3a1f17dc53bb464
 
 build:
   number: 0
