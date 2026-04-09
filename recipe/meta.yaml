@@ -10,7 +10,7 @@ source:
   sha256: fe8772abdcc18763034ec4e9a8bc5e81c85e05680acb4653f9ebbd13a07607cf
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv
 
@@ -19,6 +19,8 @@ requirements:
     - python {{ python_min }}
     - pip
     - pytest-runner
+    - setuptools >=61
+    - setuptools-scm >=8
   run:
     - python >={{ python_min }}
     - scipy
